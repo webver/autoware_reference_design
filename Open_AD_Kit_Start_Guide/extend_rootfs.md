@@ -14,6 +14,7 @@ Here is the instruction how to extend rootfs partition
    You may get the following warning when you run `gparted`.
 
    Press `Fix`.
+
    ![Warning](images/extend_rootfs/gparted01.png)
 
    Contents of storage after we flashed yocto image to M.2 SSD.
@@ -34,6 +35,7 @@ Here is the instruction how to extend rootfs partition
    ![Move data](images/extend_rootfs/gparted04.png)
 
    Drag the square to the right end.
+
    ![Drag data](images/extend_rootfs/gparted05.png)
    ![Data moved](images/extend_rootfs/gparted06.png)
 
@@ -51,6 +53,7 @@ Here is the instruction how to extend rootfs partition
    ![Move data](images/extend_rootfs/gparted09.png)
 
    Extend the square to the right end.
+
    ![Extend root](images/extend_rootfs/gparted10.png)
    ![Root extended](images/extend_rootfs/gparted11.png)
 
@@ -61,10 +64,13 @@ Here is the instruction how to extend rootfs partition
 1. Apply changes.
 
    Click check mark icon.
+
    ![Apply changes](images/extend_rootfs/gparted13.png)
 
    Click `Apply`.
+
    ![Apply changes](images/extend_rootfs/gparted14.png)
 
    You can get rootfs as follows.
+
    ![Apply changes](images/extend_rootfs/gparted15.png)
