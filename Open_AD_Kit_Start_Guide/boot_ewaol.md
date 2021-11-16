@@ -57,4 +57,4 @@ You have to extend rootfs partition. Follow the instructions [Extend rootfs part
 
    ```
 
-   :white_check_mark: You are able to access via SSH.
+   :speech_balloon: You are able to access via SSH.
