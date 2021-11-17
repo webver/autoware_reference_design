@@ -57,69 +57,69 @@ You can create GitLab Runner for arm64 on AVA platform by following the almost s
 
 ## Register specific runner for arm64 on AVA platform
 
-   ```console
-   Register specific runner for arm64 on AVA platform
-   ```
+```text
+Register specific runner for arm64 on AVA platform
+```
 
-   Supply information by following prompts.
+Supply information by following prompts.
 
-   1. `https://gitlab.com`
-   1. `registration token` shown in GitLab page
-   1. `autoware-arm-runner`
-   1. `arm64`
-   1. `docker`
-   1. `alpine:latest`
+1. `https://gitlab.com`
+1. `registration token` shown in GitLab page
+1. `autoware-arm-runner`
+1. `arm64`
+1. `docker`
+1. `alpine:latest`
 
-   ```console
-   Enter the GitLab instance URL (for example, https://gitlab.com/):
-   https://gitlab.com
-   Enter the registration token:
-   BS????????????????5U
-   Enter a description for the runner:
-   [comhpc]: autoware-arm-runner
-   Enter tags for the runner (comma-separated):
-   arm64
-   Registering runner... succeeded                     runner=BSXc4-ku
-   Enter an executor: docker, docker-ssh, parallels, ssh, kubernetes, custom, shell, virtualbox, docker+machine, docker-ssh+machine:
-   docker
-   Enter the default Docker image (for example, ruby:2.6):
-   alpine:latest
-   Runner registered successfully. Feel free to start it, but if it's running already the config should be automatically reloaded! 
-   ```
+```text
+Enter the GitLab instance URL (for example, https://gitlab.com/):
+https://gitlab.com
+Enter the registration token:
+BS????????????????5U
+Enter a description for the runner:
+[comhpc]: autoware-arm-runner
+Enter tags for the runner (comma-separated):
+arm64
+Registering runner... succeeded                     runner=BSXc4-ku
+Enter an executor: docker, docker-ssh, parallels, ssh, kubernetes, custom, shell, virtualbox, docker+machine, docker-ssh+machine:
+docker
+Enter the default Docker image (for example, ruby:2.6):
+alpine:latest
+Runner registered successfully. Feel free to start it, but if it's running already the config should be automatically reloaded!
+```
 
 ## Verify runner
 
-   ```console
-   gitlab-runner verify
-   ```
+```console
+gitlab-runner verify
+```
 
-   Refresh CI/CD page in GitLab, you can see the runner registered.
-   ![CI/CD page](images/cicd/cicd5.png)
+Refresh CI/CD page in GitLab, you can see the runner registered.
+![CI/CD page](images/cicd/cicd5.png)
 
 ## Edit configuration
 
-   ```console
-   vi /etc/gitlab-runner/config.toml
-   ```
+```console
+vi /etc/gitlab-runner/config.toml
+```
 
-   :speech_balloon: When a CI/CD job for arm64 is started, we will get the following errors.
-   ![Runner error](images/cicd/cicd6.png)
+:speech_balloon: When a CI/CD job for arm64 is started, we will get the following errors.
+![Runner error](images/cicd/cicd6.png)
 
-   To workaround this, Edit configuration as follows.
+To workaround this, Edit configuration as follows.
 
-   ```diff
-    [runners.docker]
-      tls_verify = false
-      image = "alpine:latest"
-  -  privileged = false
-  +  privileged = true
-      disable_entrypoint_overwrite = false
-      oom_kill_disable = false
-      disable_cache = false
-  -  volumes = ["/cache"]
-  +  volumes = ["/cache", "/var/run/docker.sock:/var/run/docker.sock"]
-      shm_size = 0
-   ```
+```diff
+ [runners.docker]
+   tls_verify = false
+   image = "alpine:latest"
+-  privileged = false
++  privileged = true
+   disable_entrypoint_overwrite = false
+   oom_kill_disable = false
+   disable_cache = false
+-  volumes = ["/cache"]
++  volumes = ["/cache", "/var/run/docker.sock:/var/run/docker.sock"]
+   shm_size = 0
+```
 
 ## Change job timeout value
 

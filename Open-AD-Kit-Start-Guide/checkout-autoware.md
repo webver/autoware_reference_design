@@ -8,8 +8,7 @@
 
 [Autoware Foundation / Autoware.Auto / AutowareAuto · GitLab](https://gitlab.com/autowarefoundation/autoware.auto/AutowareAuto)
 
-1. Press `Fork`
-.
+1. Press `Fork`.
    ![Fork](images/checkout_autoware/fork1.png)
 
 1. Select your namespace and choose Public from Visibility level.
@@ -37,4 +36,3 @@
    git cherry-pick 92d57a77969592f656dab0fbc2a1c949ef140f0c
    git push origin master
    ```
-  

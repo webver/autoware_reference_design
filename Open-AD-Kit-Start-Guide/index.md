@@ -7,6 +7,7 @@ This instruction explains how to build development platform for Open AD Kit and 
 ## HPC for Open AD Kit is available for purchase
 
 ADLINK provides High Performance Computer(HPC) for Open AD Kit in their website.
+
 - [SOAFEE for Software Defined Vehicles | ADLINK](https://www.adlinktech.com/en/soafee)
 
 Please feel free to contact ADLINK customer support.

@@ -2,14 +2,14 @@
 
 ## Overview
 
-*Reference: [Project Quickstart — EWAOL documentationn](https://ewaol.sites.arm.com/meta-ewaol/quickstart.html)*
+_Reference: [Project Quickstart — EWAOL documentationn](https://ewaol.sites.arm.com/meta-ewaol/quickstart.html)_
 
 This instruction explain how to build yocto image with EWAOL on your host machine.
 If you are using [AVA Developer Platform](https://www.ipi.wiki/pages/com-hpc-altra), you can also download built image from ADLINK's website, and you can skip this steps;
 
 - [AVA Developer Platform Downloads – I-Pi SMARC](https://www.ipi.wiki/pages/download-ava-developer-platform)
-![Downloads](images/getting_started/downloads.png)
-:white_check_mark: `Yocto with SOAFEE` is preferred.
+  ![Downloads](images/getting_started/downloads.png)
+  :white_check_mark: `Yocto with SOAFEE` is preferred.
 
 ## Build Host Setup
 
@@ -54,6 +54,7 @@ If you are using [AVA Developer Platform](https://www.ipi.wiki/pages/com-hpc-alt
 - :white_check_mark: **SSD Boot (highly recommended)**
   - You need to use SSD enclosure case to flash yocto image to M.2 SSD directly.
 - USB Boot
+
   - You need to use 32GB USB, not 64GB USB to flash yocto image.
 
     :warning: Do not use 64GB USB because bios gets stuck due to EDKII bug.
