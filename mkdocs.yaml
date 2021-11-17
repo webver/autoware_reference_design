@@ -21,6 +21,7 @@ theme:
     repo: fontawesome/brands/github
   language: en
   palette:
+    - primary: white
     - scheme: default
       toggle:
         icon: material/weather-sunny
@@ -36,7 +37,6 @@ extra:
     code: Roboto Mono
 
 extra_css:
-  - assets/stylesheets/color.css
   - https://use.fontawesome.com/releases/v5.15.4/css/all.css
 
 extra_javascript:
