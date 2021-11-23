@@ -16,9 +16,9 @@ Please feel free to contact ADLINK customer support.
 
 ## Table of contents
 
-1. [Getting started with EWAOL](getting_started.md)
-1. [Boot EWAOL via SSD Boot](boot_ewaol.md)
-1. [Extend rootfs partition](extend_rootfs.md)
-1. [Checkout Autoware.Auto and Apply Merge Request](checkout_autoware.md)
+1. [Getting started with EWAOL](getting-started.md)
+1. [Boot EWAOL via SSD Boot](boot-ewaol.md)
+1. [Extend rootfs partition](extend-rootfs.md)
+1. [Checkout Autoware.Auto and Apply Merge Request](checkout-autoware.md)
 1. [Setup CI/CD pipeline](cicd.md)
 1. [Setup ADE](ade.md)

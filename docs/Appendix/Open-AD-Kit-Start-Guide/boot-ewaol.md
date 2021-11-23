@@ -6,7 +6,7 @@ You need to use SSD enclosure case to flash yocto image to M.2 SSD directly.
 
 ## Get yocto image
 
-1. Build yocto image with EWAOL by following the instructions [Getting started with EWAOL](getting_started_with_ewal.md), or Download the image from the website to your host machine;
+1. Build yocto image with EWAOL by following the instructions [Getting started with EWAOL](getting-started.md), or Download the image from the website to your host machine;
    - [AVA Developer Platform Downloads – I-Pi SMARC](https://www.ipi.wiki/pages/download-ava-developer-platform) (:white_check_mark: `Yocto with SOAFEE` is preferred.)
 
 ## Flash yocto image
@@ -41,7 +41,7 @@ Remove M.2 SSD from AVA platform and flash yocto image to it directly.
 
 ## Extend rootfs partition
 
-You have to extend rootfs partition. Follow the instructions [Extend rootfs partition](extend_rootfs.md)
+You have to extend rootfs partition. Follow the instructions [Extend rootfs partition](extend-rootfs.md)
 
 ## Reinstall SSD
 

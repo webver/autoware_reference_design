@@ -9,11 +9,11 @@
 [Autoware Foundation / Autoware.Auto / AutowareAuto · GitLab](https://gitlab.com/autowarefoundation/autoware.auto/AutowareAuto)
 
 1. Press `Fork`.
-   ![Fork](images/checkout_autoware/fork1.png)
+   ![Fork](images/checkout-autoware/fork1.png)
 
 1. Select your namespace and choose Public from Visibility level.
 
-   ![Fork project](images/checkout_autoware/fork2.png)
+   ![Fork project](images/checkout-autoware/fork2.png)
 
 1. Get Autoware.Auto on you host, not on AVA platform.
 

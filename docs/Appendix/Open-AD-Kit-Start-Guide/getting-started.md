@@ -8,7 +8,7 @@ This instruction explain how to build yocto image with EWAOL on your host machin
 If you are using [AVA Developer Platform](https://www.ipi.wiki/pages/com-hpc-altra), you can also download built image from ADLINK's website, and you can skip this steps;
 
 - [AVA Developer Platform Downloads – I-Pi SMARC](https://www.ipi.wiki/pages/download-ava-developer-platform)
-  ![Downloads](images/getting_started/downloads.png)
+  ![Downloads](images/getting-started/downloads.png)
   :white_check_mark: `Yocto with SOAFEE` is preferred.
 
 ## Build Host Setup
@@ -47,7 +47,7 @@ If you are using [AVA Developer Platform](https://www.ipi.wiki/pages/com-hpc-alt
    ```
 
 :warning: You should be careful of utilizing full CPU power during build.
-![Build](images/getting_started/build.png)
+![Build](images/getting-started/build.png)
 
 **You can choose the way to boot EWAOL, SSD Boot(highly recommended) or USB Boot.**
 
