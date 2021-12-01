@@ -1,0 +1,5 @@
+nav:
+  - Overview: index.md
+  - Autoware API: autoware-api
+  - Component architecture: component-architecture
+  - Repository configuration: repository-configuration

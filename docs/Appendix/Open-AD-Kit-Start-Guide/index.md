@@ -16,9 +16,12 @@ Please feel free to contact ADLINK customer support.
 
 ## Table of contents
 
+1. [Test Configuration](test-configuration.md)
 1. [Getting started with EWAOL](getting-started.md)
 1. [Boot EWAOL via SSD Boot](boot-ewaol.md)
 1. [Extend rootfs partition](extend-rootfs.md)
-1. [Checkout Autoware.Auto and Apply Merge Request](checkout-autoware.md)
-1. [Setup CI/CD pipeline](cicd.md)
-1. [Setup ADE](ade.md)
+1. [System Setup on AVA platform](system-setup-ava.md)
+1. [System Setup on your host](system-setup-host.md)
+1. [Run Autoware.Auto and scenario simulator](run-autoware.md)
+1. [Cloud native CI/CD - Web.Auto](cloud-native-cicd-webauto.md)
+1. [Known limiations and issues](limitations-issues.md)
