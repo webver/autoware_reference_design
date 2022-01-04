@@ -78,10 +78,10 @@ Although some repositories might be added in the future, these are enough for ex
   - This is a launch configuration repository that contains node configurations and their parameters.
 - [autowarefoundation/autoware-github-actions](https://github.com/autowarefoundation/autoware-github-actions)
   - This is a repository for CI that contains [reusable workflows of GitHub Actions](https://docs.github.com/ja/actions/learn-github-actions/reusing-workflows).
-  - Since Autoware has a lot of repositories in total, making CI scripts DRY is efficient.
+  - Since Autoware has a lot of repositories in total, making CI scripts DRY(Don't Repeat Yourself) is efficient.
 - [autowarefoundation/autoware-documentation](https://github.com/autowarefoundation/autoware-documentation)
   - This is a documentation repository for Autoware users and developers.
-  - Since Autoware Core/Unverse has multiple repositories, preparing a central documentation repository is more user-friendly than writing distributed documentation in each repository.
+  - Since Autoware Core/Universe has multiple repositories, preparing a central documentation repository is more user-friendly than writing distributed documentation in each repository.
 
 ## FAQ
 

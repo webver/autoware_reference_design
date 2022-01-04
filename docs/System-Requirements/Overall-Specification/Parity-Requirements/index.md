@@ -2,7 +2,7 @@
 
 ## Importance of the parity in the verification of autonomous driving systems
 
-One of the most important points in the verification process of the autonomous driving system is the guaranteed level of the parity between the edge (onboard) and the cloud (CI /CD) environment.  Various types of the parity and the information that is useful in the verification planning taking the parity into consideration　are explained. 
+One of the most important points in the verification process of the autonomous driving system is the guaranteed level of the parity between the edge (onboard) and the cloud (CI /CD) environment.  Various types of the parity and the information that is useful in the verification architecture taking the parity into consideration　are explained. 
 
 ## Parity types
 
@@ -14,7 +14,7 @@ The parity of the hardware (machines). When using the public cloud, as the devic
 
 ### CPU Architecture Parity
 
-The parity of the processor implementation including the micro architecture and the clock speed, etc.
+The parity of the processor implementation including the microarchitecture and the clock speed, etc.
 
 ### ISA Parity
 
@@ -28,7 +28,7 @@ However, depending on the implementation, some modules do not run even if the Ru
 
 ### Environment Parity
 
-The Environment Parity means the parity of the network configuration of the autonomous driving system applications.
+The Environment Parity means the parity of the network configuration, set of frameworks and libraries of the autonomous driving system applications.
 
 ## Parity and Cloud Native DevOps
 

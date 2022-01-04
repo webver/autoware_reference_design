@@ -37,7 +37,7 @@
 2. Middleware Requirements
    1. DDS Requirements
 3. Map Requirements
-4. [Design docs of Autoware](./Software-Requirements/Design-Docs-of-Autoware/)
+4. [Design docs of Autoware](./Software-Requirements/Design-Docs-of-Autoware/index.md)
    1. [Autoware API](Software-Requirements/Design-Docs-of-Autoware/autoware-api/index.md)
    2. [Component architecture](Software-Requirements/Design-Docs-of-Autoware/component-architecture/index.md)
    3. [Repository configuration](Software-Requirements/Design-Docs-of-Autoware/repository-configuration/index.md)

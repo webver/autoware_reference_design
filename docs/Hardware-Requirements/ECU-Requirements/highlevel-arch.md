@@ -10,7 +10,7 @@ The reference system consists of three parts of computing unit.
 - Traffic Light Recognition
 
 
-Each unit can be implemented on separated hardware units (ECUs) and, if the hardware has sufficient system resource and performance, some of the units can also be integrated on a single hardware unit.
+Each unit can be implemented on separated hardware units (ECUs) and, if the hardware has sufficient system resource and performance, some units can also be integrated on a single hardware unit.
 
 ## Block Diagram
 
