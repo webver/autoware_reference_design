@@ -4,9 +4,9 @@
 
 This guide explains how to run Autoware.Auto by using multiple docker container with same docker image and how to test by using scenario simulator.
 
-We need 2 computers running Linux to complete test execution;
+We need 2 computing devices to complete test execution;
 
-- One is the __ARM-Based__ computer to run Autoware.Auto.
+- One is the __ARM-Based__ embeded device to run Autoware.Auto.
 
 - The second is __Intel x64__ computer to run Rviz and scenario simulator.
 
@@ -14,7 +14,7 @@ We need 2 computers running Linux to complete test execution;
 
 The following describes test bed for Open AD Kit 1.0.
 
-![Test bed](images/test-configuration/test-bed.png)
+![Test bed](images/test-configuration/test-bed-pcu.png)
 
 :speech_balloon: The docker image of Autoware.Auto is provided for `arm64`.
 

@@ -2,13 +2,13 @@
 
 ## Overview
 
-This instruction explains how to run Autoware.Auto on AVA platform and how run scenario simulator and visialization on your host machine.
+This instruction explains how to run Autoware.Auto on AVA platform or PCU and how run scenario simulator and visialization on your host machine.
 
-## Run Autoware.Auto on AVA platform
+## Run Autoware.Auto on AVA platform or PCU
 
 1. Open terminal window for each module on you host.
 
-1. Access AVA platform via SSH in each terminal window.
+1. Access AVA platform or PCU via SSH in each terminal window.
 
 1. Find docker image id.
 
@@ -27,25 +27,25 @@ This instruction explains how to run Autoware.Auto on AVA platform and how run s
    :black_medium_square:__Terminal 1 (map)__
 
    ```console
-   docker run --rm -it --net host -v /home/root/map:/map -v /home/root/cyclonedds:/etc/cyclonedds 48a4503b4fe4 /bin/bash -c "export CYCLONEDDS_URI=file:///etc/cyclonedds/cyclonedds.xml; export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp; source install/setup.bash; ros2 launch scenario_simulator_launch autoware_auto_mapping.launch.py map_path:=/map/kashiwanoha"
+   docker run --rm -it --net host -v ~/map:/map -v ~/cyclonedds:/etc/cyclonedds 48a4503b4fe4 /bin/bash -c "export CYCLONEDDS_URI=file:///etc/cyclonedds/cyclonedds.xml; export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp; source install/setup.bash; ros2 launch scenario_simulator_launch autoware_auto_mapping.launch.py map_path:=/map/kashiwanoha"
    ```
 
    :black_medium_square:__Terminal 2 (perception)__
 
    ```console
-   docker run --rm -it --net host -v /home/root/cyclonedds:/etc/cyclonedds 48a4503b4fe4 /bin/bash -c "export CYCLONEDDS_URI=file:///etc/cyclonedds/cyclonedds.xml; export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp; source install/setup.bash; ros2 launch scenario_simulator_launch autoware_auto_perception.launch.py"
+   docker run --rm -it --net host -v ~/cyclonedds:/etc/cyclonedds 48a4503b4fe4 /bin/bash -c "export CYCLONEDDS_URI=file:///etc/cyclonedds/cyclonedds.xml; export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp; source install/setup.bash; ros2 launch scenario_simulator_launch autoware_auto_perception.launch.py"
    ```
 
    :black_medium_square:__Terminal 3 (planning)__
 
    ```console
-   docker run --rm -it --net host -v /home/root/cyclonedds:/etc/cyclonedds 48a4503b4fe4 /bin/bash -c "export CYCLONEDDS_URI=file:///etc/cyclonedds/cyclonedds.xml; export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp; source install/setup.bash; ros2 launch scenario_simulator_launch autoware_auto_planning.launch.py"
+   docker run --rm -it --net host -v ~/cyclonedds:/etc/cyclonedds 48a4503b4fe4 /bin/bash -c "export CYCLONEDDS_URI=file:///etc/cyclonedds/cyclonedds.xml; export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp; source install/setup.bash; ros2 launch scenario_simulator_launch autoware_auto_planning.launch.py"
    ```
 
    :black_medium_square:__Terminal 4 (vehicle)__
 
    ```console
-   docker run --rm -it --net host -v /home/root/cyclonedds:/etc/cyclonedds 48a4503b4fe4 /bin/bash -c "export CYCLONEDDS_URI=file:///etc/cyclonedds/cyclonedds.xml; export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp; source install/setup.bash; ros2 launch autoware_auto_launch autoware_auto_vehicle.launch.py"
+   docker run --rm -it --net host -v ~/cyclonedds:/etc/cyclonedds 48a4503b4fe4 /bin/bash -c "export CYCLONEDDS_URI=file:///etc/cyclonedds/cyclonedds.xml; export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp; source install/setup.bash; ros2 launch autoware_auto_launch autoware_auto_vehicle.launch.py"
    ```
 
 ## Run visialization and scenario simulator on your host machine
