@@ -107,12 +107,12 @@ You need to change the element `NetworkInterfaceAddress` to the network interfac
 
 In this test, we use launch flle placed in Autoware.Auto to run visuzalization quickly and easily.
 
-1. Install ADE on AVA platform by following the instructions; [Installation — ADE 4.4.0dev documentation](https://ade-cli.readthedocs.io/en/latest/install.html)
+1. Install ADE on x86 host by following the instructions; [Installation — ADE 4.4.0dev documentation](https://ade-cli.readthedocs.io/en/latest/install.html)
 
    Download and setup ADE.
 
    ```console
-   wget https://gitlab.com/ApexAI/ade-cli/-/jobs/1341322852/artifacts/raw/dist/ade+aarch64 -O ade
+   wget https://gitlab.com/ApexAI/ade-cli/-/jobs/1341322851/artifacts/raw/dist/ade+x86_64 -O ade
    chmod +x ade
    mv ade /usr/bin/
    ```
